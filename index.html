@@ -1,86 +1,252 @@
-<!-- Header and Navigation -->
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Racheal R. Baker * Front End Developer</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Rammetto+One|Open+Sans'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" href="images/rb-favicon.png">
+
+</head>
+
+<body>
+
+  <!-- navigation header section-->
 <nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<!-- Header -->
+	<!-- return to top button -->
+	<div class="btn btn-warning top-btn" id="topBtn">
+		<i class="fa fa-arrow-up"></i>
+		<!-- end of return to top button -->
+	</div>
+	<!-- hire me button -->
+	<div class="btn btn-warning hire-button" data-toggle="modal" data-target="#myModal" data-backdrop="static">
+		<span class="text-uppercase">hire me<br><i class="fa fa-rocket"></i>
+		</span>
+		<!-- end hire me button -->
+	</div>
+
+	<!-- navigation header container -->
+	<div class="container-fluid">
+		<!-- navigation bar -->
 		<div class="navbar-header">
+			<!-- when screen is < 765, navigation is displayed in "hamburger" button -->
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+				<!-- lines on hamburger button -->
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+			<!-- end of hamburger button -->
       </button>
-			<a class="navbar-brand" href="#">Racheal Baker 
-				<small>Web Designer and Developer</small></a>
+			<!-- brand name on navbar -->
+			<a class="navbar-brand" href="#">Racheal R. Baker
+				<small>Designer & Front End Developer</small></a>
+			<!-- end navbar-header -->
 		</div>
-		<!-- Navigation Menu -->
-		<div class="collapse navbar-collapse text-center" id="navbar">
+		<!-- navigation menu -->
+		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#profile">Profile</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#connect">Connect</a></li>
 			</ul>
+			<!-- end of nav menu -->
 		</div>
+		<!-- end navigation container -->
 	</div>
+	<!-- end of navigation header-->
 </nav>
 
-<!-- Picture of Cleo with Tagline -->
-<div class="container-cleo">
-	<img class="img-responsive" src="https://www.rachealbaker.com/wp-content/uploads/2018/01/20171230_135443-EFFECTS.jpg" alt="Photo of Cleo the Cat by Racheal Baker">
-	<div class="cleo-caption text-center">
-		<p>Hi, I'm Racheal.</p>
-		<p>I like hanging out with cats and building websites.</p>
-		<p>My cat Cleo <i class="fa fa-arrow-right"></i></p>
-		<p>ME <i class="fa fa-arrow-down"></i>
+<!-- header image and caption section -->
+<div class="cleo-container">
+	<!-- header image -->
+	<div class="cleo">
+		<img class="img-responsive" src="images/20171230_135443-EFFECTS.jpg" alt="Photo of Cleo the Cat by Racheal Baker" />
 	</div>
+	<!-- header image caption -->
+	<div class="cleo-caption">
+		<span class="caption-title" id="cleo-caption">Become the Cat's Meow Online</span>
+		<p>In a jungle of ordinary, stand apart from the pride with an extraordinary website.</p>
+		<!-- end caption -->
+	</div>
+	<!-- end header image container -->
 </div>
 
-<!-- About -->
-<div id="profile">
-	<div class="container-fluid container-profile text-center">
-		<div class="row">
-			<div class="col-lg-4">
-				<img class="img-rounded" src="https://www.rachealbaker.com/wp-content/uploads/2018/02/20171007_160603-e1517852761185.jpg" alt="Photo of Racheal Baker">
-			</div>
-			<div class="col-lg-8">
-				<h3 class="page-header" id="profile-text">* Web Designer * Front End Developer * Cat Lady *</h3>
-				<p id="profile-text">Awesome, creative, and highly detailed-orientated Web Developer with experience building websites for statewide and regional non-profit organizations. Fully committed to designing and developing innovative websites that users will love. Dedicated
-					to providing secure websites that use the latest methods to protect against threats. Resourceful problem solver who is always eager to learn more.</p>
-			</div>
+<!-- introduction section -->
+<div class="container-fluid intro-container text-center">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="text-uppercase"><a href="#profile">Me <i class="fa fa-arrow-down"></i></a> My cat Cleo <i class="fa fa-arrow-up"></i></p>
+			<p>Hello, I'm Racheal. I'm a Front End Web Developer with an eye for design and strong attention to detail. Also, I'm a cat lady. But, I'm a cat lady who can design, develop, and deploy an awesome website just for you!</p>
+			<!-- end column -->
 		</div>
+		<!-- end row -->
 	</div>
+	<!-- end container -->
 </div>
 
-<!-- Portfolio -->
-<div id="portfolio">
-	<div class="container-fluid container-portfolio text-center">
-		<h3 class="page-header">My Portfolio</h3>
-		<div class="row">
-			<!-- Screenshot of MHCFA website -->
-			<div class="col-lg-6">
-				<img class="img-thumbnail" src="https://www.rachealbaker.com/wp-content/uploads/2018/02/mhcfa-screenshot-2-17-18.png" alt="Missouri Health Care for All Website Screenshot">
-				<p><a href="https://mohealthcareforall.org" target="_blank">Missouri Health Care for All</a>: Web Design, Custom CSS for WordPress Theme, Website Migration, Security Protocols, Web Management</p>
+<!-- profile section -->
+<div class="container-fluid profile-container" id="profile">
+	<div class="row">
+		<!-- profile cell -->
+		<div class="col-sm-8">
+			<!-- main profile section -->
+			<div class="profile-main">
+				<h3 class="page-header">My Profile</h3>
+				<p>Exceptionally creative and highly detailed-orientated front end developer with experience developing user-friendly websites for individuals, small businesses, and statewide and regional non-profit organizations. Fully committed to writing clean and
+					efficient code. Resourceful problem solver who is always eager to learn more.</p>
+				<!-- end main section -->
 			</div>
-			<!-- Screenshot of SEMO AHEC website -->
-			<div class="col-lg-6">
-				<img class="img-thumbnail" src="https://www.rachealbaker.com/wp-content/uploads/2018/02/semoahec-screenshot.png" alt="SEMO AHEC Website Screenshot">
-				<p><a href="https://semoahec.org" target="_blank">Southeast Missouri Area Health Education Center</a>: Web Design, Web Development, Website Migration</p>
+			<!-- profile skill section -->
+			<div class="profile-skill">
+				<div class="label label-warning profile-label">Technical Skills</div>
+				<p> HTML5, CSS3, Bootstrap 4, JavaScript, jQuery, WordPress Customization</p>
+				<!-- end skill -->
 			</div>
+			<!-- profile skill section -->
+			<div class="profile-skill">
+				<div class="label label-warning profile-label">Other Useful Skills</div>
+				<p>Excellent Communication, Following Directions, Working in a Virtual Team, Graphic Design</p>
+				<!-- end skill -->
+			</div>
+			<!-- profile skill section -->
+			<div class="profile-skill">
+				<div class="label label-warning profile-label">Education</div>
+				<p><a href="https://freecodecamp.org/certification/catlady42/javascript-algorithms-and-data-structures" target="_blank">Certification in JavaScript Algorithms and Data Structures Projects</a>, freeCodeCamp, June 2018</p>
+				<p><a href="https://www.freecodecamp.org/certification/catlady42/legacy-front-end" target="_blank">Certification in Front End Developement</a>, freeCodeCamp, May 2018</p>
+				<p>A.A.S. in Information Systems Technology, Three Rivers Community College, May 2003</p>
+				<!-- end skill -->
+			</div>
+			<!-- end profile cell -->
 		</div>
+		<!-- profile pic cell -->
+		<div class="col-sm-4 text-center">
+			<img class="img-thumbnail img-rounded" style="max-width: 300px" src="images/20180331_165719-bw.jpg" alt="Photo of Racheal Baker">
+			<p><strong>Racheal R. Baker</strong>
+				<br>* Web Designer *
+				<br>* Front End Developer *
+				<br>* Cat Lady *</p>
+			<!-- end pic cell -->
+		</div>
+		<!-- blockquote cell -->
+		<div class="col-sm-12">
+			<div class="panel panel-default blockquote">
+				<div class="panel-body text-left">
+					<!-- blockquote -->
+					<blockquote>
+						<p>After many years of freelance work and acting as the 'unofficial web designer and developer' for the various non-profit organizations I've worked for over the years, I am taking the leap to find a full time remote position as a Front End Developer.</p>
+						<p>I genuinely enjoy coding and I am passionate about friendly UI design. I always love a new challenge. Anything I don't know how to do, I can usually figure out.</p>
+						<p class="text-right"><em>- Racheal R. Baker</em></p>
+						<!-- end blockquote -->
+					</blockquote>
+					<!-- end panel body -->
+				</div>
+				<!-- end panel -->
+			</div>
+			<!-- end cell -->
+		</div>
+		<!-- end row -->
 	</div>
+	<!-- end container -->
 </div>
 
-<!-- Contact -->
-<div id="connect">
-	<div class="container-fluid text-center">
-		<h3 class="page-header">Connect with Me</h3>
-		<a href="https://www.linkedin.com/in/rachealrena/" target="_blank"><button class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>
-		<a href="https://github.com/catlady42" target="_blank"><button class="btn btn-warning"><i class="fa fa-github"></i></button></a>
+<!-- portfolio section -->
+<div class="container-fluid portfolio-container" id="portfolio">
+	<h3 class="page-header">My Portfolio</h3>
+	<div class="label label-warning profile-label">My Story</div>
+	<p>I've been designing and developing websites since 2003. My first job as a website designer came when I participated in a college internship for my degree. My internship was with a non-profit organization: the Southeastern Missouri Area Health Education
+		Center (SEMO AHEC). I've re-designed their website twice since then.</p>
+	<p>After I completed my internship, I started a trend of working for non-profit organizations. My primary job title and role would generally be administrative in nature. However, I always ended up being the unofficial graphic designer and/or the unofficial
+		webmaster.</p>
+	<p>It's time this changes.</p>
+	<div class="label label-danger profile-label">Maximum Effort</div>
+	<p>I want my primary job title and role to be "Front End Developer". I am most happy when working on website projects. This is where I shine. I excel at being able to notice small code errors or design inconsistencies.</p>
+	<p>Since 2009, I have done freelance work on and off, but I want more. I've designed and developed many websites over the years and I've always received positive feedback. So,I hope the recent projects below will show you some of what I can do.</p>
+	<div class="label label-warning profile-label">Recent Projects</div>
+	<div class="row">
+		<!-- project 1 cell -->
+		<div class="col-sm-6">
+			<img class="img-thumbnail" src="images/mhcfa-screenshot-2-17-18.png" alt="Missouri Health Care for All Website Screenshot">
+			<p><a href="https://mohealthcareforall.org" target="_blank">Missouri Health Care for All</a>: Web Design, Website Migration, Security Protocols, Website Management</p>
+			<!-- end project 1 cell -->
+		</div>
+		<!-- project 2 cell -->
+		<div class="col-sm-6">
+			<img class="img-thumbnail" src="images/semoahec-screenshot.png" alt="SEMO AHEC Website Screenshot">
+			<p><a href="https://semoahec.org" target="_blank">Southeast Missouri Area Health Education Center</a>: Web Design, Web Development, Website Migration</p>
+			<!-- end project 2 cell -->
+		</div>
+		<!-- end row -->
 	</div>
+	<!-- end container -->
 </div>
 
-<!-- Copyright -->
-</div>
-<hr>
-<div class="row">
-	<div class="col-xs-12">
-		<p class="text-center">&copy; 2018 * Designed and Coded by Racheal Baker</p>
+<!-- connect section -->
+<div class="container-fluid text-center connect-container" id="connect">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3 class="page-header">Connect with Me</h3>
+			<p>Feel free to connect with me through any or all of the networks listed below. More examples of my work can be found on <a href="https://codepen.io/catlady42/" target="_blank" title="My CodePen Profile">CodePen</a>. Thank you for visiting my website!</p>
+			<!-- github -->
+			<a href="https://gitshowcase.com/catlady42" target="_blank" title="My Github Profile"><button class="btn btn-warning btn-connect"><i class="fa fa-github"></i></button></a>
+			<!-- copepen -->
+			<a href="https://codepen.io/catlady42/" target="_blank" title="My CodePen Profile"><button class="btn btn-info btn-connect"><i class="fa fa-codepen"></i></button></a>
+			<!-- freecodecamp -->
+			<a href="https://freecodecamp.org/catlady42" target="_blank" title="My freeCodeCamp Profile"><button class="btn btn-success btn-connect"><i class="fa fa-free-code-camp"></i></button></a>
+			<!-- linkedin -->
+			<a href="https://www.linkedin.com/in/catlady42/" target="_blank" title="My LinkedIn Profile"><button class="btn btn-primary btn-connect"><i class="fa fa-linkedin"></i></button></a>
+			<!-- end of column -->
+		</div>
+		<!-- end of row -->
 	</div>
+	<!-- end of container -->
+</div>
+
+<!-- footer -->
+<div class="container-fluid text-center footer">
+	<div class="row">
+		<div class="col-sm-12">
+			<p>&copy; 2018 * Designed and Coded by Racheal Baker <i class="fa fa-rocket"></i></p>
+			<!-- end of column -->
+		</div>
+		<!-- end of row -->
+	</div>
+	<!-- end of container -->
+</div>
+
+<!-- contact me modal for hire me button -->
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Please fill out the form to send me a message.</h4>
+				<p>Alternatively, you may also email me at <strong>info@rachealbaker.com</strong>. I look forward to reading your message soon. Thank you in advance for your consideration.</p>
+			</div>
+			<div class="modal-body">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdccWBKdAx_9sF1CjdwyEuo6_kHM-8xXBq3HMYDnNUMK40WNw/viewform?embedded=true" width="100%" height="800">Loading...</iframe>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+			</div>
+			<!-- end of modal -->
+		</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
