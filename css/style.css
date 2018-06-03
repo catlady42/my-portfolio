@@ -154,28 +154,28 @@ a:hover {
 /* if the screen size is 766px wide or more, set the font-size to x */
 @media screen and (min-width: 766px) {
 	.caption-title {
-		font-size: 2em;
+		font-size: 1.9em;
 	}
 }
 
 /* if the screen size is 765px wide or less, set the font-size to x */
 @media screen and (max-width: 765px) {
 	.caption-title {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 }
 
 /* if the screen size is 766px wide or more, set the font-size to x */
 @media screen and (min-width: 766px) {
 	.cleo-caption {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 }
 
 /* if the screen size is 765px wide or less, set the font-size to x */
 @media screen and (max-width: 765px) {
 	.cleo-caption {
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 }
 
