@@ -146,6 +146,20 @@ a:hover {
 	background-color: rgba(102, 0, 102, 0.6);
 }
 
+/* intro section links and visited links */
+.cleo-caption a:link,
+.cleo-caption a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/* intro section links being clicked and links with pointer over it */
+.cleo-caption a:active,
+.cleo-caption a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
 /* caption title */
 .caption-title {
 	font-family: "Rammetto One", cursive;
@@ -191,18 +205,10 @@ a:hover {
 	background-color: rgb(0, 128, 128);
 }
 
-/* intro section links and visited links */
-.intro-container a:link,
-.intro-container a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-/* intro section links being clicked and links with pointer over it */
-.intro-container a:active,
-.intro-container a:hover {
-	color: orange;
-	text-decoration: none;
+.intro-title {
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+	font-family: "Rammetto One", cursive;
 }
 
 /* profile container */
