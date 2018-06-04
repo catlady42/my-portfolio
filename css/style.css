@@ -142,7 +142,7 @@ a:hover {
 	padding: 15px;
 	color: rgb(255, 255, 255);
 	border-radius: 0;
-	border: 0px solid white;
+	border: 3px solid white;
 	background-color: rgba(102, 0, 102, 0.6);
 }
 
