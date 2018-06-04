@@ -40,8 +40,9 @@ a:hover {
 	position: fixed;
 	z-index: 0;
 	bottom: 15px;
-	right: 25px;
+	right: 20px;
 	padding: 15px;
+	font-size: 16px;
 	color: rgb(255, 255, 255);
 	border: 3px solid white;
 	background-color: rgba(0, 128, 128, 0.8);
@@ -52,8 +53,8 @@ a:hover {
 	position: fixed;
 	z-index: -1;
 	top: 87px;
-	right: 25px;
-	padding: 10px;
+	right: 20px;
+	padding: 15px;
 	font-weight: 800;
 	color: rgb(255, 255, 255);
 	border: 3px solid white;
@@ -79,8 +80,8 @@ a:hover {
 	height: 90px;
 	margin: auto;
 	padding-top: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
 	font-size: 18px;
 	background-color: rgb(255, 255, 255);
 }
@@ -126,7 +127,7 @@ a:hover {
 /* header container with cleo and caption */
 .cleo-container {
 	margin-top: 90px;
-	max-height: 700px;
+	max-height: 720px;
 	background-color: rgb(0, 0, 0);
 }
 
@@ -136,7 +137,7 @@ a:hover {
 	z-index: 0;
 	top: 20%;
 	left: 5%;
-	right: 55%;
+	right: 52%;
 	bottom: auto;
 	margin: auto;
 	padding: 15px;
@@ -189,7 +190,7 @@ a:hover {
 /* if the screen size is 765px wide or less, set the font-size to x */
 @media screen and (max-width: 765px) {
 	.cleo-caption {
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 }
 
