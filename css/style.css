@@ -51,9 +51,8 @@ a:hover {
 
 /* hire me button*/
 .hire-button {
-	position: fixed;
 	z-index: -1;
-	top: 87px;
+	top: 88px;
 	right: 20px;
 	padding: 15px;
 	font-weight: 800;
@@ -128,7 +127,7 @@ a:hover {
 /* header container with cleo and caption */
 .cleo-container {
 	margin-top: 90px;
-	max-height: 720px;
+	max-height: 900px;
 	background-color: rgb(0, 0, 0);
 }
 
@@ -136,22 +135,21 @@ a:hover {
 .cleo-caption {
 	position: absolute;
 	z-index: 0;
-	top: 20%;
+	top: 50%;
 	left: 5%;
-	right: 50%;
-	bottom: auto;
-	margin: auto;
-	padding: 30px;
-	color: rgb(255, 255, 255);
-	border-radius: 5px;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	/* color: rgb(255, 255, 255);
+	border-radius: 50%;
 	border: 3px solid rgb(255, 255, 255);
-	background-color: rgba(102, 0, 102, 0.6);
+	background-color: rgba(102, 0, 102, 0.6); */
 }
 
 /* intro section links and visited links */
 .cleo-caption a:link,
 .cleo-caption a:visited {
-	color: white;
+	color: teal;
 	text-decoration: none;
 }
 
@@ -162,11 +160,6 @@ a:hover {
 	text-decoration: none;
 }
 
-/* caption title */
-.caption-title {
-	font-family: "Rammetto One", cursive;
-}
-
 /* if the screen size is 766px wide or more, set the font-size to x */
 @media screen and (min-width: 766px) {
 	.caption-title {
@@ -174,24 +167,25 @@ a:hover {
 	}
 }
 
-/* if the screen size is 765px wide or less, set the font-size to x */
+/* if the screen size is 765px wide or less, set the font-size to x
 @media screen and (max-width: 765px) {
 	.caption-title {
 		font-size: 1.4em;
 	}
 }
+*/
 
 /* if the screen size is 766px wide or more, set the font-size to x */
 @media screen and (min-width: 766px) {
 	.cleo-caption {
-		font-size: 1.4em;
+		font-size: 3em;
 	}
 }
 
 /* if the screen size is 765px wide or less, set the font-size to x */
 @media screen and (max-width: 765px) {
 	.cleo-caption {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 }
 
@@ -205,6 +199,12 @@ a:hover {
 	font-size: 20px;
 	color: rgb(255, 255, 255);
 	background-color: rgb(0, 128, 128);
+}
+
+.welcome {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	color: white;
 }
 
 /* profile container */
@@ -278,4 +278,15 @@ a:hover {
 	font-size: 14px;
 	color: rgb(255, 255, 255);
 	background-color: rgb(102, 0, 102);
+}
+
+.footer a:link,
+.footer a:visited {
+	color: white;
+}
+
+.footer a:active,
+.footer a:hover {
+	color: orange;
+	text-decoration: none;
 }
